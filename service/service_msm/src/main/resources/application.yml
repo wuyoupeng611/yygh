@@ -31,7 +31,7 @@ spring:
 aliyun:
   sms:
     regionId: default
-    accessKeyId: LTAI5tQuxLNJyw2h1JAmcWiG
-    secret: q3RDJBtRcBKzBhmRVKoD54r9DM5XoB
+    accessKeyId: ？？
+    secret: ？？
 
 
