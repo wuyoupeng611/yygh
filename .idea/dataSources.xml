@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="yygh_host" uuid="49b3f46c-dc0d-48df-8663-af0ea31ccd5a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/yygh_hosp?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=GMT%2B8&amp;useSSL=false</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="yyghApi" uuid="99cc7b2f-116d-4589-a28f-4fa4276963a8">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://192.168.199.133:27017/yygh_hosp</jdbc-url>
+    </data-source>
+  </component>
+</project>

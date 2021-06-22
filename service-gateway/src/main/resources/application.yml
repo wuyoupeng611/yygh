@@ -1,0 +1,51 @@
+server:
+  port: 80
+spring:
+  # 服务名
+  application:
+    name: service-gateway
+  cloud:
+    # nacos服务地址
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    #使用服务发现路由
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes[0]:
+        #设置路由id
+        id: service-hosp
+        #设置路由的uri
+        uri: lb://service-hosp
+        #设置路由断言,代理servicerId为auth-service的/auth/路径
+        predicates: Path=/*/hosp/**
+      routes[1]:
+        id: service-cmn
+        uri: lb://service-cmn
+        predicates: Path=/*/cmn/**
+      routes[2]:
+        id: service-user
+        uri: lb://service-user
+        predicates: Path=/*/user/**
+      routes[3]:
+        id: service-user
+        uri: lb://service-user
+        predicates: Path=/*/ucenter/**
+      routes[4]:
+        id: service-user
+        uri: lb://service-user
+        predicates: Path=/*/patient/**
+      routes[5]:
+        id: service-mail
+        uri: lb://service-mail
+        predicates: Path=/*/mail/**
+      routes[6]:
+        id: service-oss
+        uri: lb://service-oss
+        predicates: Path=/*/oss/**
+      routes[7]:
+        id: service-order
+        uri: lb://service-order
+        predicates: Path=/*/order/**
