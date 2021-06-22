@@ -17,7 +17,7 @@ spring:
 #  阿里云accessKey
 aliyun:
   oss:
-    accessKeyId: ？？
-    secret: ？？
+    accessKeyId: LTAI5tQuxLNJyw2h1JAmcWiG
+    secret: q3RDJBtRcBKzBhmRVKoD54r9DM5XoB
     bucket: yygh-image
     endpoint: oss-cn-beijing.aliyuncs.com
